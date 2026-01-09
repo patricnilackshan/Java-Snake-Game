@@ -1,7 +1,6 @@
 package com.patric;
 
 import java.awt.*;
-import java.awt.RenderingHints.Key;
 import java.awt.event.*;
 import javax.swing.*;
 import java.util.Random;
@@ -12,7 +11,7 @@ public class GamePanel extends JPanel implements ActionListener {
     static final int SCREEN_HEIGHT = 600;
     static final int UNIT_SIZE = 25;
     static final int GAME_UNITS = (SCREEN_WIDTH*SCREEN_HEIGHT)/(UNIT_SIZE*UNIT_SIZE);
-    static final int DEALY=100;
+    static final int DELAY=100;
     final int[] x = new int[GAME_UNITS];
     final int[] y = new int[GAME_UNITS];
     int bodyParts = 6;
@@ -36,7 +35,7 @@ public class GamePanel extends JPanel implements ActionListener {
         newApple();
         running = true;
         if (timer == null){
-            timer = new Timer(DEALY,this);
+            timer = new Timer(DELAY,this);
             timer.start();
         } else{
             timer.restart();
