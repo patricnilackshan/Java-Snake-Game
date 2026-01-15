@@ -4,7 +4,11 @@ A classic Snake game implementation in Java using Swing.
 
 ## Description
 
-This is a simple implementation of the classic Snake game where you control a snake to eat apples and grow longer. Avoid hitting the walls or yourself!
+Implemented core game mechanics including snake movement, collision detection, apple spawning, and score tracking.
+Designed object-oriented architecture with separate classes for game logic (GamePanel), window management (GameFrame), and application entry point (SnakeGame).
+Created a GUI-based user interface using Java Swing with real-time rendering and smooth keyboard controls.
+Integrated game state management for handling running/game-over states with automatic restart functionality.
+Implemented gameplay features including directional movement validation, self-collision detection, and boundary checking.
 
 ## Features
 
